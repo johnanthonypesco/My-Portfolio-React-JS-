@@ -2,8 +2,73 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
 }
 body{
     background-color: black;
     color: white;
+}
+#h1{
+    animation: scrolldown 1s ease-in-out;
+}
+#p{
+    animation: scrollrigt 1.5s ease-in-out;
+}
+#home button{
+    animation: scrolltop 1.5s ease-in-out;
+}
+#home button:nth-child(1){
+    animation: scrolltop 1.3s ease-in-out;
+}
+#home button:nth-child(2){
+    animation: scrolltop 1.5s ease-in-out;
+}
+#homeimg{
+    animation: scrollleft 1.5s ease-in-out;
+}
+
+@keyframes scrolldown {
+    0%{
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes scrollrigt {
+    0%{
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes scrolltop {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes scrollleft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
