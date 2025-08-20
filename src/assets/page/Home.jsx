@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Nav/>
-            <main>
+            <main className='z-0'>
                 <section id='home' className='px-10 sm:px-32 mt-24 flex flex-col-reverse lg:flex-row items-center justify-center'>
                     <div className='w-full lg:w-1/2 flex flex-col gap-4 items-start'>
                         <h1 className='text-3xl lg:text-4xl font-bold mt-5 lg:mt-0'>Hi, I'm <span className='text-[#f12711] text-4xl lg:text-5xl'>John Anthony Pesco</span></h1>
@@ -22,8 +22,6 @@ export default function Home() {
                         <img src={Me} alt="" className='w-[450px] rounded-full'/>
                     </div>
                 </section>
-
-
             </main>
         </>
     );

@@ -8,7 +8,7 @@ export default function Nav() {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="flex justify-between items-center px-5 lg:px-20 h-16 fixed top-0 left-0 right-0" id='nav'>
+        <nav className="flex justify-between items-center px-5 lg:px-20 h-16 fixed top-0 left-0 right-0 bg-black z-1" id='nav'>
             <h1 className='text-2xl font-bold tracking-wider text-[#f12711]'>Anthony</h1>
                 <ul className={'flex gap-8 lg:flex lg:static lg:opacity-100 lg:p-0 lg:flex-row lg:items-center absolute bg-black top-[62px] right-0 left-0 p-5 flex-col opacity-0 transition duration-300 ' + (open ? 'opacity-100' : 'opacity-0')}>
 
