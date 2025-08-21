@@ -12,10 +12,10 @@ export default function Nav() {
             <h1 className='text-2xl font-bold tracking-wider text-[#f12711]'>Anthony</h1>
                 <ul className={'uppercase flex gap-8 lg:flex lg:static lg:opacity-100 lg:p-0 lg:flex-row lg:items-center absolute bg-black top-[62px] right-0 left-0 p-5 flex-col opacity-0 transition duration-300 ' + (open ? 'opacity-100' : 'opacity-0')}>
                 <li><a href="#home" className='hover:text-[#f12711] font-regular tracking-wide transition duration-300'>Home</a></li>
-                <li><a href="#" className='hover:text-[#f12711] font-regular tracking-wide transition duration-300'>About Me</a></li>
-                <li><a href="#" className='hover:text-[#f12711] font-regular tracking-wide transition duration-300'>Portfolio</a></li>
-                <li><a href="#" className='hover:text-[#f12711] font-regular tracking-wide transition duration-300'>Contact Me</a></li>
-            <button id='downloadcv' className='px-4 py-2 rounded-lg bg-[#1DA1F2] flex items-center justify-center w-fit font-semibold hover:-translate-y-1 transform duration-300'>Download CV</button>
+                <li><a href="#about" className='hover:text-[#f12711] font-regular tracking-wide transition duration-300'>About Me</a></li>
+                <li><a href="#portfolio" className='hover:text-[#f12711] font-regular tracking-wide transition duration-300'>Portfolio</a></li>
+                <li><a href="#contact" className='hover:text-[#f12711] font-regular tracking-wide transition duration-300'>Contact Me</a></li>
+            <button onClick={() => window.open("https://pescojohnanthony.jobs180.com/", '_blank')} id='downloadcv' className='flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1DA1F2] flex items-center justify-center w-fit font-semibold hover:-translate-y-1 transform duration-300'><i class="fa-solid fa-file-export"></i>Download My CV</button>
             </ul>
 
             <i class={"fa-solid fa-bars text-2xl hover:text-[#f12711] transition duration-300 hover:cursor-pointer lg:hidden block" + (open ? ' fa-xmark' : ' fa-bars')} onClick={() => setOpen(!open)}></i>
